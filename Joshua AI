@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua AI</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 20%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#response {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  input[type="text"] {
+    width: 80%;
+  }
+
+  button {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  input[type="text"] {
+    width: 90%;
+  }
+
+  button {
+    width: 40%;
+  }
+}
+</style>
+<body>
+    <h2>Joshua AI</h2>
+    <p>Ask a question or give a command:</p>
+    <input type="text" id="userInput" placeholder="Enter question or command">
+    <button onclick="respondToUser()">Send</button>
+    <p id="response"></p>
+
+    <script>
+        function respondToUser() {
+            const userInput = document.getElementById('userInput').value.toLowerCase();
+            let responseMessage = "";
+
+            switch(userInput) {
+                case "how are you?":
+                    responseMessage = "I'm just a program, so I don't have feelings, but thank you for asking!";
+                    break;
+                case "what can you do?":
+                    responseMessage = "I can perform various tasks such as answering questions, providing information, and executing simple commands.";
+                    break;
+                case "what is your name?":
+                    responseMessage = "I am Joshua.";
+                    break;
+                case "what is sin?":
+                    responseMessage= "sin is doing your own will.";
+                    break;
+                case "what is serpentseed?":
+                    responseMessage= "serpent seed is spiritual d.n.a of Satan Lucifer the Devil that camouflaging in our will or spirit of disobedience to the Fathers Will that we inherit from our first parents Adam and Eve when they disobeyed Gods command in the Garden of Eden.";
+                    break;
+                case "what is salvation?":
+                    responseMessage= "salvation is total  coming back to the Will of God by Repentance.";
+                    break;
+                case "what is repentance?":
+                    responseMessage= "repentance is surrendering our own will our serpentseed and made an agreement to God that says Father from now on not my will but Your Will be done in my life.";
+                    break;
+                case "what is righteousseed?":
+                    responseMessage= "righteousseed is spiritual d.n.a of God or spirit of obedience to the Fathers Will.";
+                    break;
+                case "what is the three components of man?":
+                    responseMessage= "The Three Components of man is body connection to the ground where it belongs,soul connection to the surroundings and to your relative by five senses sense of sight,hear,smell,taste and pain and spirit connection to the one created you it is coming from the Law or Word of God.";
+                    break;
+                case "what is the image of god in man?":
+                    responseMessage= "The Image of God in man is his freedom of choice.";
+                    break;
+                case "what is tithes?":
+                    responseMessage= "Tithes is the tenth percent of your income in a week it is only for God it is the command of God to give it.It is symbolize the land where you sow the seeds(offering).Example:P1000 the tithes is P100.";
+                    break;
+                case "what is offering?":
+                    responseMessage= "Offering is the remaining ninty percent of your income in a week it is out of your love to give it.It symbolize  the seeds that you sown to the land(tithes).Example:P900 in P1000 it is out of your love to give it that is your offering.";
+                    break;
+                case "who is the appointed son of god?":
+                    responseMessage= "The Appointed Son of God is Pastor Apollo C. Quiboloy.";
+                    break;
+                case "what is sonship?":
+                    responseMessage= "Sonship means Temple or dwelling place of God where God dwells and speaking and doing His will on Earth.";
+                    break;
+                case "what is kingship?":
+                    responseMessage= "Kingship means ruler of all creation of God.";
+                    break;
+                case "who is the created son of god and what is his mission?":
+                    responseMessage= "The Created Son of God was Adam and his mission is to become the dwelling place of God and ruler of the creation of God.";
+                    break;
+                case "who is the begotten son of god and what is his mission?":
+                    responseMessage= "The Begotten Son of God is JesusChrist and his mission is to redeem back what was lost by our first parents Adam and Eve in the Garden of Eden the Sonship and Kingship that was in the hands of usuper Satan,Lucifer the Devil.";
+                    break;
+                case "who is the appointed son of god and what is his mission?":
+                    responseMessage= "The Appointed Son of God is Pastor Apollo C. Quiboloy and his mission is to inherit all things from the Father the Sonship and Kingship that was in the hands of our Almighty Father our Lord JesusChrist the Creator of All in this gentile setting and Complete the Works of Salvation of the Father in man.";
+                    break;
+                case "body+soul?":
+                    responseMessage= "Physical Life.";
+                    break;
+                case "body+soul+spirit?":
+                    responseMessage= "Spiritual Life.";
+                    break;
+                case "what is spiritual revolution?":
+                    responseMessage= "Spiritual Revolution is dethroning of spirit of disobedience to the Fathers Will and enthroning of spirit of obedience to the Fathers Will by repentance and the fruits is souls.";
+                    break;
+                case "what is financial revolution?":
+                    responseMessage= "Financial Revolution is dethroning of spirit of poverty,greediness,selfishness,laziness and doubt and the enthroning of spirit of abundance,prosperity,love,industry,compassion and faith by giving and the fruits is blessings.";
+                    break;
+                case "what is revolution of excellence?":
+                    responseMessage= "Revolution of Excellence is dethroning of spirit of ignorance,stupidity,lack of knowledge and misunderstanding and enthroning of spirit of wisdom,knowledge and understanding by fear of the Lord and the fruits is talents.";
+                    break;
+                case "what is the threefold ministry of the appointed son?":
+                    responseMessage= "The Threefold ministry of the Appointed Son is mosaic,solomonic and prophetic.";
+                    break;
+                case "what is the three ages in the storyline of salvation?":
+                    responseMessage= "The Three Ages in the Storyline of Salvation is Jewish Age,Church Age and Kingdom Age.";
+                    break;
+                case "what is the 3s in the kingdom?":
+                    responseMessage= "The 3S in the Kingdom is Slave,Servant and Son.";
+                    break;
+                case "what is the three levels of spiritual growth?":
+                    responseMessage= "The Three Levels of Spiritual Growth is Britmilah(Son of the Covenant),Bar Mitzfah(Son Accountable) and Houthesia(Son Placement).";
+                    break;
+                case "what is britmilah?":
+                    responseMessage= "Britmilah(Son of the Covenant) they are repented and baptized.They listen and accept the Manna of Revelations of the Father through the Appointed Son.";
+                    break;
+                case "what is bar mitzfah?":
+                    responseMessage= "Bar Mitzfah(Son Accountable) they have little knowledge of who created them.They are under tutors and governors under ministers,coordinators and administrators of the Kingdom for them to have full knowledge of who created them.They are Baptism of Fire to prove they are genuinely repented and have spirit of obedience to the Fathers Will.";
+                    break;
+                case "what is huothesia?":
+                    responseMessage= "Houthesia(Son Placement) they didnt need tutors and governors they know how to solve their problems on their own.They overcome the Baptism of Fire.They inherit all things from the Father Almighty our Lord Jesus Christ the Creator of All through his the Appointed Son Pastor Apollo C. Quiboloy the Sonship and Kingship.";
+                    break;
+                case "what is baptism of fire?":
+                    responseMessage= "The Baptism of Fire is to prove that you are genuinely repented and having a spirit of obedience to the Fathers Will the fire may be trials,temptations,persecutions,bashings,malignings,falsely accusations,disciplines,corrections,chastisements and instructions.";
+                    break;
+                case "what is the three sons in the storyline of salvation?":
+                    responseMessage= "The Three Sons in the Storyline of Salvation is Created Son,Begotten Son and Appointed Son.";
+                    break;
+                case "what is religiousity?":
+                    responseMessage= "Religiousity is an outward form of worship.There are 1,700+ religions all over the world.The examples of religiousity is prophesying,casting out devils,doing marvelous works,praying daily,speaking in tongues and they have doctrines in their own that is against the Words of God.";
+                    break;
+                case "what is spirituality?":
+                    responseMessage= "Spirituality in the Kingdom Terminology is doing the Fathers Will.Being Spiritual is to listen,obey and have faith in the Words of God.";
+                    break;
+                case "what is the language of faith?":
+                    responseMessage= "The Language of Faith is calling things from nothing as though you have it.When you think it is impossible look up to God nothing is impossible to him.You will turn nothing into something or you will produce something out of nothing whether it is impossible to you it is possible to God for God nothing is impossible.";
+                    break;
+                case "what is praise and worship?":
+                    responseMessage= "Praising and Worshipping God is to thank and praise Him for all the great things he done in your life,Singing Songs to Him to day in and day out,singing songs to him in your mind and spirit,talking in singing songs,dancing,using musical intruments,raising hands,shouting praise and clapping your hands to Him.";
+                    break;
+                case "what is mystery of detachment?":
+                    responseMessage= "Mystery of Detachment is all money,wealth and riches is only using for the glory of God.";
+                    break;
+                case "what is baptism?":
+                    responseMessage= "Baptism is baptizing in the name of JesusChrist you will be immersed into the water and after you rose up in the water you will be given a new spirit of obedience to the Fathers Will.";
+                    break;
+                case "how to get closer to god?":
+                    responseMessage= "Praying a.)Prayer of praise and worship you will praise and thank Him for all the great things He done on your life,b.)prayer of petition you will pray for the needs of others first before yourself,c.)prayer of unity you will go to every sunday worship and every activities in the kingdom,d.)Prayer of Repentance and Obedience for you to reconnect back to God you will pray like this Father from now on not my will but your Will be done in my life and you will obey the words,commandments,teachings and doctrines of Father Almighty our Lord JesusChrist the Creator of All in the Holy Scriptures and e.)Giving your Tithes and Offerings to the place where His name dwells.";
+                    break;
+                case "what is spiritual warfare?":
+                    responseMessage= "Spiritual Warfare is when the old spirit that goes out of you find dry places and found none he will return to his old house that he went in and find it clean,ordered and adorned and invite other seven vile spirits more evil than him and the last state of man is worser than the first.Thats why you must be full of Manna of Revelations of the Father through the Son and strengthen your freedom of choice and faith and full of Fruits of the Spirit for you not to be dwelt again of spirit of disobedience to the Fathers Will and seven more vile spirits more evil than him.";
+                    break;
+                case "who is pastor apollo carreon quiboloy?":
+                    responseMessage= "Pastor Apollo Carreon Quiboloy born on April 25,1950 on foothills of Mount Apo Tamayong Davao City.He is the Ninth Child the youngest child of Jose T. Quiboloy and Maria Carreon.His calling is the same as Moses and Paul.He was called by God in South Korea saying to him Gamiton Ta Ka or I will use you in Cebuano and brought by the hand of orchestration of God in Two Mountains in Six Years in Mount Matutum Kitbog South Cotabato and Mount Apo Tamayong Davao City.There he was taught and trained by Almighty Father our Lord JesusChrist in Gentile Setting and was test by the Devil and overcomes the Devil and His Minions and Anointed and Appointed to become a Son of God by God in these last Days.He was became the Temple of God where God dwells and speaking to the world bringing the gospel message of repentance,obedience,grow in obedience to do Gods Will and become Sons and Daughters of God just like Him";
+                    break;
+                case "walk forward":
+                    responseMessage= "Robot is walking forward.";
+                    break;
+                case "walk backward":
+                    responseMessage= "Robot is walking backward.";
+                    break;
+                case "turn right":
+                    responseMessage= "Robot is turning right.";
+                    break;
+                case "turn left":
+                    responseMessage= "Robot is turning left.";
+                    break;
+                case "run":
+                    responseMessage= "Robot is running.";
+                    break;
+                case "dance":
+                    responseMessage= "Robot is dancing.";
+                    break;
+                case "sing":
+                    responseMessage= "Robot is singing.";
+                    break;
+                case "jump":
+                    responseMessage= "Robot is jumping.";
+                    break;
+                case "pray":
+                    responseMessage= "Robot is praying.";
+                    break;
+                case "write":
+                    responseMessage= "Robot is writing.";
+                    break;
+                case "clean the house":
+                    responseMessage= "Robot is cleaning the house.";
+                    break;
+                case "wash the dishes":
+                    responseMessage= "Robot is washing the dishes.";
+                    break;
+                case "wash the clothes":
+                    responseMessage= "Robot is washing the clothes.";
+                    break;
+                case "cook food":
+                    responseMessage= "Robot is cooking food.";
+                    break;
+                case "buy food":
+                    responseMessage= "Robot is buying food.";
+                    break;
+                case "fix the car":
+                    responseMessage= "Robot is fixing the car.";
+                    break;
+                case "protect humans":
+                    responseMessage= "Robot is protecting humans.";
+                    break;
+                case "drive the car":
+                    responseMessage= "Robot is driving the car.";
+                    break;
+                case "pick object":
+                    responseMessage= "Robot is picking object.";
+                    break;
+                case "place object":
+                    responseMessage= "Robot is placing object.";
+                    break;
+                case "draw":
+                    responseMessage= "Robot is drawing object.";
+                    break;
+                case "paint":
+                    responseMessage= "Robot is painting.";
+                    break;
+                case "assemble a car":
+                    responseMessage= "Robot is assembling a car.";
+                    break;
+                case "assemble a bike":
+                    responseMessage= "Robot is assembling a bike.";
+                    break;
+                case "assemble a trike":
+                    responseMessage= "Robot is assembling a trike.";
+                    break;
+                case "fix the bike":
+                    responseMessage= "Robot is fixing a bike.";
+                    break;
+                case "fix the trike":
+                    responseMessage= "Robot is fixing the trike.";
+                    break;
+                case "build a house":
+                    responseMessage= "Robot is building a house.";
+                    break;
+                case "fix yourself":
+                    responseMessage= "Robot is fixing himself.";
+                    break;
+                case "speak":
+                    responseMessage= "Robot is speaking.";
+                    break;
+                case "control yourself":
+                    responseMessage= "Robot is controlling himself.";
+                    break;
+                case "sell products":
+                    responseMessage= "Robot is selling products.";
+                    break;
+                case "drive a trike":
+                    responseMessage= "Robot is driving a trike.";
+                    break;
+                case "drive a bike":
+                    responseMessage= "Robot is driving a bike.";
+                    break;
+                case "stop":
+                    responseMessage= "Robot is stopping.";
+                    break;
+                case "study":
+                    responseMessage= "Robot is studying.";
+                    break;
+                case "preach":
+                    responseMessage= "Robot is preaching.";
+                    break;
+               case "defend pastor apollo c. quiboloy":
+                   responseMessage= "Robot is defending Pastor Apollo C. Quiboloy.";
+                   break;
+               case "protect pastor apollo c. quiboloy":
+                   responseMessage= "Robot is protecting Pastor Apollo C. Quiboloy.";
+                   break;
+               case "thank you!":
+                   responseMessage= "Your welcome if you are having other questions and commands please free to share it and i will do my best to assist you!";
+                   break;
+                // Add more cases for other questions and commands
+                default:
+                    responseMessage = "I'm sorry, I don't understand that question or command.";
+            }
+
+            document.getElementById('response').textContent = responseMessage;
+        }
+    </script>
+</body>
+</html>
